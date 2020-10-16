@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/hasansino/gcmap.svg?branch=main)](https://travis-ci.org/hasansino/gcmap)
+[![Build Status](https://travis-ci.org/hasansino/environment.svg?branch=master)](https://travis-ci.org/hasansino/environment)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hasansino/environment)](https://goreportcard.com/report/github.com/hasansino/environment)
 
-# gcmap
+# environment
 Tiny package that provides environment awareness
 
 # Installation
