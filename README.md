@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/hasansino/environment.svg?branch=master)](https://travis-ci.org/hasansino/environment)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hasansino/environment)](https://goreportcard.com/report/github.com/hasansino/environment)
+[![Build Status](https://travis-ci.com/hasansino/environment.svg?branch=master)](https://travis-ci.com/hasansino/environment)
 
 # environment
+
 Tiny package that provides environment awareness
 
 # Installation
@@ -12,12 +13,14 @@ Tiny package that provides environment awareness
 
 # Example usage
 ```go
+package main 
+
 import "github.com/hasansino/environment"
 
 func main() {
     env := environment.GetEnvironment()
     if env.IsDevelopment() {
-    	// do some stuff
+        // do some stuff
     }
     
     // override value
