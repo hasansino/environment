@@ -33,7 +33,7 @@ func init() {
 	bootstrap()
 }
 
-// bootstrap reads OS'es environment variable and initializes package
+// bootstrap reads OS environment variable and initializes package
 func bootstrap() {
 	switch strings.ToLower(os.Getenv(environmentVariableName)) {
 	case environmentVariableValueProd:
@@ -62,7 +62,8 @@ func GetEnvironment() Environment {
 
 // IsProduction returns true if service operates in production environment
 func IsProduction() bool {
-	return GetEnvironment() == Production
+	e := GetEnvironment()
+	return e == Production || e == Avangard
 }
 
 // IsAvangard returns true if service operates in avangard environment
